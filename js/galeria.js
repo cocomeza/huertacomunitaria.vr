@@ -21,7 +21,7 @@ const galeriaData = [
   {
     titulo: "Primeros Brotes",
     descripcion: "¡Nuestros primeros vegetales creciendo!",
-    imagen: "../assets/galeria/brotes.jpg"
+    imagen: "../assets/img/primeros_brotes.jpeg"
   },
   {
     titulo: "Riego Inteligente",
