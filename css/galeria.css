@@ -45,7 +45,6 @@ h1, h2 {
   font-weight: 600;
 }
 
-/* Footer */
 .footer-modern {
   background: #e3ffe6;
   padding: 1.2em 0 0.7em 0;
@@ -72,6 +71,20 @@ h1, h2 {
 .footer-link:hover {
   text-decoration: underline;
 }
+/* Media query para móviles */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-left, .footer-right {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 575px) {
   .gallery-img { height: 110px; }
