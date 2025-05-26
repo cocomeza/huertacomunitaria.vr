@@ -77,19 +77,13 @@ body {
   padding: 1.2em 0 0.7em 0;
   color: #222;
   font-size: 1em;
+  margin-top: 2em;
 }
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-.footer-left {
-  display: flex;
-  align-items: center;
-}
-.footer-left i {
-  font-size: 1.3rem;
 }
 .footer-link {
   color: #28a745;
@@ -98,7 +92,6 @@ body {
 .footer-link:hover {
   text-decoration: underline;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
