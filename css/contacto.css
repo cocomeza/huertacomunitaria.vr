@@ -107,3 +107,17 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-left, .footer-right {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
