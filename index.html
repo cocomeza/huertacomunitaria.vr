@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huerta Comunitaria Animada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+
+<body>
+  <!-- Navbar amistoso mejorado -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <div class="logo-container me-2">
+          <i class="fas fa-leaf text-success"></i>
+        </div>
+        <span class="fw-bold text-success">Huerta Sustentable</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active nav-hover" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="./html/proyecto.html">Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="./html/galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="./html/consejos.html">Consejos</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover" href="./html/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Elementos flotantes decorativos -->
+  <div class="floating-decorations" aria-hidden="true">
+    <div class="floating-leaf leaf-1">🌱</div>
+    <div class="floating-leaf leaf-2">🌿</div>
+    <div class="floating-leaf leaf-3">🍃</div>
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+  </div>
+
+  <!-- Hero animado mejorado -->
+  <header class="hero-section d-flex align-items-center justify-content-center text-center" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-image-wrapper">
+        <img src="./assets/img/huerta.comunitaria.animacion.jpg" alt="Ilustración huerta comunitaria"
+          class="img-fluid hero-img animated-bounce-in" />
+        <div class="image-glow"></div>
+        <div class="participants-badge">
+          <i class="fas fa-users"></i>
+          <span>127+ participantes</span>
+        </div>
+      </div>
+      <h1 class="display-4 fw-bold mt-4 animated-fade-in hero-title">
+        ¡Sumate a la <span class="text-highlight">Huerta Comunitaria</span>!
+      </h1>
+      <p class="lead animated-fade-in2 hero-subtitle">
+        Divertite, aprendé y ayudá a crecer nuestro espacio verde en Ramallo
+      </p>
+      <a href="#taller-huerta" class="btn btn-success btn-lg mt-3 animated-bounce pulse-btn">
+        <i class="fas fa-heart me-2"></i>Quiero colaborar
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección de talleres mejorada -->
+  <section class="container my-5 text-center talleres-section" id="taller-huerta">
+    <div class="section-header">
+      <h2 class="mb-4 text-success fw-bold animated-fade-in section-title">
+        <i class="fas fa-clock me-2"></i>Talleres para todas las edades
+      </h2>
+    </div>
+    <div class="talleres-container">
+      <div class="taller-card-modern animated-pop">
+        <div class="taller-icon">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="taller-day">Lunes</div>
+        <div class="taller-time">9:00 a 11:30</div>
+        <div class="taller-shine"></div>
+      </div>
+      <div class="taller-card-modern animated-pop featured" style="animation-delay:.2s">
+        <div class="popular-badge">Más popular</div>
+        <div class="taller-icon">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="taller-day">Miércoles</div>
+        <div class="taller-time">14:00 a 16:30</div>
+        <div class="taller-shine"></div>
+      </div>
+      <div class="taller-card-modern animated-pop" style="animation-delay:.4s">
+        <div class="taller-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="taller-day">Viernes</div>
+        <div class="taller-time">14:00 a 16:30</div>
+        <div class="taller-shine"></div>
+      </div>
+    </div>
+    <p class="mt-4 animated-fade-in2 motivation-text">
+      <i class="fas fa-star text-warning me-2"></i>
+      ¡No hace falta experiencia, solo ganas de aprender y compartir!
+    </p>
+  </section>
+
+  <!-- Sobre el Proyecto mejorado -->
+  <section id="sobre-proyecto" class="benefits-section py-5 section-reveal">
+    <div class="container animated-fade-in text-center">
+      <h2 class="text-success fw-bold mb-4 section-title">
+        <i class="fas fa-question-circle me-2"></i>¿Por qué sumarte?
+      </h2>
+      <div class="benefits-grid">
+        <div class="benefit-item animated-pop">
+          <div class="benefit-emoji">🌱</div>
+          <div class="benefit-text">Aprendé a cultivar y cuidar la tierra</div>
+        </div>
+        <div class="benefit-item animated-pop" style="animation-delay:.1s">
+          <div class="benefit-emoji">🤝</div>
+          <div class="benefit-text">Hacé nuevos amigos y colaborá en comunidad</div>
+        </div>
+        <div class="benefit-item animated-pop" style="animation-delay:.2s">
+          <div class="benefit-emoji">🌍</div>
+          <div class="benefit-text">Ayudá al medio ambiente reciclando y sembrando</div>
+        </div>
+        <div class="benefit-item animated-pop" style="animation-delay:.3s">
+          <div class="benefit-emoji">🎁</div>
+          <div class="benefit-text">¡Divertite y llevate plantines a casa!</div>
+        </div>
+      </div>
+      <div class="location-info mt-4">
+        <i class="fas fa-map-marker-alt text-success me-2"></i>
+        La huerta está en <strong>Brown y Gomendio, Villa Ramallo</strong>. ¡Te esperamos!
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto mejorado -->
+  <section id="contacto" class="contact-section py-5 section-reveal">
+    <div class="container text-center animated-fade-in2">
+      <h2 class="mb-4 text-success fw-bold section-title">
+        <i class="fas fa-envelope me-2"></i>Contacto
+      </h2>
+      <div class="contact-card">
+        <p class="contact-text">¿Tenés dudas o querés sumarte?</p>
+        <a href="mailto:huertacomunitaria@ramallo.gob.ar" class="contact-email">
+          <i class="fas fa-envelope me-2"></i>
+          huertacomunitaria@ramallo.gob.ar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer mejorado -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <i class="fas fa-leaf text-success me-2"></i>
+          <span class="fw-bold">Huerta Sustentable Ramallo</span>
+        </div>
+        <div class="footer-right">
+          <small>
+            © 2025 Proyecto Huerta Comunitaria Sustentable | Desarrollado por
+            <a href="https://www.instagram.com/boton.creativo.ar?igsh=c3NhZXV0OHMwNW81" target="_blank"
+              rel="noopener noreferrer" class="footer-link">Botón Creativo</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/efectos.js"></script>
+</body>
+</html>

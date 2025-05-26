@@ -1,0 +1,107 @@
+/* Reset básico y mejoras de accesibilidad */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fdf7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background 0.3s;
+  padding-top: 80px; /* para navbar fijo */
+}
+@media (max-width: 991px) {
+  body {
+    padding-top: 110px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  z-index: 1030;
+}
+.navbar-brand img.logo-navbar {
+  max-height: 40px;
+  border-radius: 6px;
+}
+.navbar .nav-link {
+  transition: color 0.2s;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+/* Beneficios / Consejos */
+.benefit-item {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(40, 167, 69, 0.08);
+  transition: transform 0.3s;
+  cursor: default;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.benefit-item:hover {
+  transform: translateY(-6px);
+}
+.benefit-emoji {
+  font-size: 2.5rem;
+  color: #28a745;
+  display: block;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+h3 {
+  color: #155724;
+}
+ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.fst-italic {
+  color: #555;
+  font-style: italic;
+}
+
+/* Footer */
+.footer-modern {
+  background: #e3ffe6;
+  padding: 1.2em 0 0.7em 0;
+  color: #222;
+  font-size: 1em;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+.footer-left i {
+  font-size: 1.3rem;
+}
+.footer-link {
+  color: #28a745;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+  }
+}

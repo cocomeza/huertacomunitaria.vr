@@ -1,0 +1,292 @@
+/* Reset básico y mejoras de accesibilidad */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fdf7;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+/* Compensar el navbar fijo dinámicamente */
+body {
+  padding-top: 80px; /* Ajusta según la altura real del navbar */
+}
+@media (max-width: 991px) {
+  body {
+    padding-top: 110px; /* Navbar colapsado es más alto */
+  }
+}
+
+/* Navbar */
+.navbar {
+  z-index: 1030;
+}
+.navbar-brand .logo-container {
+  font-size: 2rem;
+}
+.navbar .nav-link {
+  transition: color 0.2s;
+}
+.navbar .nav-link.nav-hover:hover,
+.navbar .nav-link.active {
+  color: #28a745 !important;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 80vh;
+  padding-top: 2rem;
+  background: linear-gradient(120deg, #e3ffe6 0%, #f8fdf7 100%);
+  position: relative;
+  z-index: 2;
+}
+.hero-img {
+  max-width: 320px;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(40,167,69,0.15);
+  transition: box-shadow 0.3s;
+}
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.image-glow {
+  position: absolute;
+  bottom: -15px; left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 40px;
+  background: radial-gradient(ellipse at center, #a2cfa2 0%, transparent 80%);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+.participants-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #fff;
+  color: #28a745;
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(40,167,69,0.1);
+  transition: transform 0.3s;
+  z-index: 2;
+}
+
+/* Botón principal */
+.pulse-btn {
+  animation: pulse 1.5s infinite;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #28a74544; }
+  70% { box-shadow: 0 0 0 10px #28a74511; }
+  100% { box-shadow: 0 0 0 0 #28a74544; }
+}
+
+/* Elementos flotantes */
+.floating-decorations {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+.floating-leaf, .floating-circle {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+.leaf-1 { top: 10%; left: 5%; }
+.leaf-2 { top: 40%; left: 90%; }
+.leaf-3 { top: 70%; left: 20%; }
+.circle-1 {
+  top: 20%; left: 60%;
+  width: 50px; height: 50px;
+  background: #a2cfa2;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.circle-2 {
+  top: 80%; left: 80%;
+  width: 35px; height: 35px;
+  background: #f4a261;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+/* Talleres */
+.talleres-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.taller-card-modern {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 20px rgba(40,167,69,0.09);
+  padding: 1.5em 2em;
+  min-width: 180px;
+  max-width: 220px;
+  margin: 1em 0;
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.taller-card-modern.featured {
+  border: 2px solid #28a745;
+  box-shadow: 0 6px 24px rgba(40,167,69,0.12);
+}
+.taller-icon {
+  font-size: 2.2rem;
+  color: #28a745;
+  margin-bottom: 0.5em;
+}
+.taller-day {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.taller-time {
+  color: #555;
+  font-size: 1.1em;
+}
+.popular-badge {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: #f4a261;
+  color: #fff;
+  font-size: 0.85em;
+  padding: 0.2em 0.8em;
+  border-radius: 1em;
+  font-weight: 600;
+  z-index: 2;
+}
+.taller-shine {
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, transparent 60%, #e3ffe6 100%);
+  opacity: 0.4;
+  pointer-events: none;
+  transition: left 0.5s;
+}
+
+/* Beneficios */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.benefit-item {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(40,167,69,0.08);
+  padding: 1.3em 1em;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.benefit-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.4em;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Reveal Animations */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(.4,0,.2,1);
+}
+.section-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contacto */
+.contact-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(40,167,69,0.08);
+  padding: 2em 1em;
+  display: inline-block;
+  margin-top: 1em;
+}
+.contact-email {
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-email:hover {
+  color: #155724;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer-modern {
+  background: #e3ffe6;
+  padding: 1.2em 0 0.7em 0;
+  color: #222;
+  font-size: 1em;
+  margin-top: 2em;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: #28a745;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Animaciones para partículas y ripple (ondas) */
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes particle {
+  to {
+    transform: translate(var(--random-x), var(--random-y)) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .talleres-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
