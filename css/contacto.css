@@ -24,13 +24,36 @@ body {
 }
 
 /* Card del formulario */
+
 .contacto-card {
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(47,79,47,0.10);
-  padding: 36px 24px 36px 24px;
+  padding: 36px 24px;
   max-width: 650px;
+  width: 100%;
+  margin: 40px auto;
 }
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contacto-card {
+    padding: 24px 8px;
+    max-width: 98vw;
+  }
+  #contacto {
+    min-height: 60vh;
+    padding: 0 4px;
+  }
+}
+
 
 /* Formulario */
 .form-label {
