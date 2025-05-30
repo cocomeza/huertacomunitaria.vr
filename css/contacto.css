@@ -38,6 +38,7 @@ body {
 #contacto {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
   align-items: center;
   min-height: 80vh;
   width: 100%;
