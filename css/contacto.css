@@ -24,7 +24,6 @@ body {
 }
 
 /* Card del formulario */
-
 .contacto-card {
   background: #fff;
   border-radius: 24px;
@@ -44,17 +43,12 @@ body {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .contacto-card {
-    padding: 24px 8px;
-    max-width: 98vw;
-  }
-  #contacto {
-    min-height: 60vh;
-    padding: 0 4px;
-  }
+/* Agregado: contenedor del formulario Jotform para mejor control en móvil */
+.jotform-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
 }
-
 
 /* Formulario */
 .form-label {
@@ -101,34 +95,53 @@ body {
   color: #222;
   font-size: 1em;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .footer-left {
   display: flex;
   align-items: center;
 }
+
 .footer-left i {
   font-size: 1.3rem;
 }
+
 .footer-link {
   color: #28a745;
   text-decoration: none;
 }
+
 .footer-link:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Responsive general */
 @media (max-width: 768px) {
   .contacto-card {
     padding: 24px 16px;
+    max-width: 98vw;
   }
+
+  #contacto {
+    min-height: 60vh;
+    padding: 60px 4px 0 4px; /* ✅ Aumenta espacio superior en mobile */
+  }
+
   .btn-success {
     width: 100%;
+  }
+}
+
+/* Responsive adicional para Jotform iframe */
+@media (max-width: 576px) {
+  .jotform-wrapper iframe {
+    min-height: 800px !important; /* ✅ Evita recorte del formulario */
   }
 }
 
@@ -139,9 +152,9 @@ body {
     text-align: center;
     align-items: center;
   }
+
   .footer-left, .footer-right {
     justify-content: center;
     width: 100%;
   }
 }
-
