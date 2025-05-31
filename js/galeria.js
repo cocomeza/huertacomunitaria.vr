@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const galeriaData = [
   {
-    titulo: "Macetas Eco-Friendly",
+    titulo: "Macetas Ecologicas",
     descripcion: "Botellas plásticas convertidas en macetas.",
     imagen: "../assets/img/maceta_reciclada.jpeg"
   },
