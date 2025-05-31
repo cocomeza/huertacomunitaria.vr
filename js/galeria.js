@@ -31,7 +31,7 @@ const galeriaData = [
   {
     titulo: "Transformación Completa",
     descripcion: "De lote baldío a huerta verde.",
-    imagen: "../assets/galeria/transformacion.jpg"
+    imagen: "../assets/img/lote_baldio.jpg"
   }
 ];
 
